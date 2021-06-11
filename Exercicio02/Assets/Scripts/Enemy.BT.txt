@@ -1,0 +1,31 @@
+tree "root"
+        fallback
+            tree "Idle"
+            tree "ChasePlayer" 
+             
+
+tree "ChasePlayer" 
+    sequence
+            while
+                fallback 
+                    globalDetection
+                    playerDetected
+                Chase
+            while
+                alerted
+                sequence
+                    CheckLastPosition
+                    parallel
+                        while
+                            Wait 30.0
+                            ForgetPlayer
+                        repeat
+                            CheckAround
+            
+        
+
+           
+        
+
+            
+       

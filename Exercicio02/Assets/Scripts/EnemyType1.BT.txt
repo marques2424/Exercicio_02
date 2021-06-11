@@ -1,0 +1,13 @@
+tree "Idle"
+    sequence
+        while
+            not alerted
+            sequence
+               MoveTo (0)
+               Wait 5.0
+               MoveTo (1)
+               Wait 5.0
+               MoveTo (2)
+               Wait 5.0
+               MoveTo (3)
+               Wait 5.0
